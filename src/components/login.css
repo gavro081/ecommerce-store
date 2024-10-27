@@ -1,0 +1,91 @@
+@import url(general.css);
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 100px;
+    background-color: var(--main-bgc);
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: var(--main-bgc);
+    color: var(--main-white);
+}
+
+.login .container{
+    padding: 3rem;
+    border-radius: 12px 0 0 12px;
+}
+
+.login form{
+    margin-top: 1rem;
+    color: var(--main-white);
+    /* border: 1px solid black; */
+}
+.login .container .left{
+    background-color: var(--main-purple);
+    padding: 1.5rem;
+    border-radius: 0 12px 12px 0;
+}
+
+.login form label{
+    font-size: 1.1rem;
+    margin-top: .4rem;
+}
+
+.login form input{
+    font-size: 1.1rem;
+    height: 1.5rem;
+    padding-left: .4rem;
+    width: 30ch;
+    margin-top: .4rem;
+}
+
+.login form input:focus{
+    outline: 1px solid var(--main-bgc);
+}
+
+.login form button{
+    margin-top: 1rem;
+    padding: .75rem 1.5rem;
+    border: none;
+    background-color: var(--main-bgc);
+    color: var(--main-white);
+    transition: color .15s;
+    cursor: pointer;
+}
+
+.login form button:hover{
+    color: var(--main-purple);
+}
+
+.login input{
+    border-radius: 6px;
+    border: none;
+}
+
+.login form + div{
+    margin-top: 1rem;
+}
+
+/* link{
+    color: var(--main-bgc);
+} */
+
+form > p{
+    margin-top: .5rem;
+}
+
+.login img{
+    height: 384px;
+    border-radius: 12px 0 0 12px;
+}
+
+.login .container{
+    display: flex;
+}

@@ -1,0 +1,16 @@
+@import url(general.css);
+
+.about{
+    background-color: var(--main-bgc);
+    padding: 30px 52px;
+}
+
+.about .container{
+    display: flex;
+    flex-direction: column;
+    color: var(--main-white);
+    gap: 10px;
+    border: 1px solid var(--main-purple);
+    border-radius: 12px;
+    padding: 2rem 4rem;
+}

@@ -1,0 +1,15 @@
+@import url(general.css);
+
+.toast {
+    position: fixed;
+    top: 150px;
+    right: 50px;
+    background-color: var(--main-white);
+    color: var(--main-purple);
+    padding: 15px 30px;
+    border-radius: 12px;
+    opacity: .9;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1000;
+    font-size: 1.15rem;
+}

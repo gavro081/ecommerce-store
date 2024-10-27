@@ -1,0 +1,105 @@
+@import url(general.css);
+
+.view .container{
+    display: flex;
+    background-color: var(--main-bgc);
+    padding: 0 40px 100px 40px;
+    height: 610px;
+    /* gap: 4rem; */
+    justify-content:center;
+}
+
+.product-info{
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--main-purple);
+    /* padding: 1rem; */
+    padding-right: 3rem;
+    border-radius: 0 12px 12px 0;
+    font-size: 1.2rem;
+}
+
+.product-info h1{
+    padding-top: 1rem;
+    color: var(--main-white);
+}
+
+.product-info p{
+    color: var(--main-white);
+}
+
+.view .sizes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(38px, 1fr));
+    gap: 16px;
+    /* background-color: var(--main-white); */
+    padding: 1rem .3rem;
+    border: 1px solid var(--main-white);
+    border-radius: 12px;
+}
+
+.view .sizes .size{
+    aspect-ratio: 1;
+    text-align: center;
+    border: 2px solid var(--main-bgc);
+    font-weight: 500;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: var(--main-white);
+}
+
+.view .sizes .unavailable{
+    text-decoration: line-through;
+    color: var(--main-bgc);
+}
+
+.available{
+    background-color: var(--main-white);
+}
+
+.available:hover{
+    cursor: pointer;
+    opacity: .9;
+}
+
+.size{
+    transition: background-color .2s;
+}
+.view .sizes .size.selected{
+    /* box-shadow: inset 0 0 5px black; */
+    background-color: var(--main-white);
+    color: var(--main-bgc);
+}
+
+.product-img{
+    /* height: 450px; */
+    background-color: var(--main-purple);
+    border-radius: 12px 0 0 12px;
+    padding-inline: 4rem;
+}
+
+.view .btn{
+    align-self: flex-start;
+    padding: .9rem;
+    font-size: 14px;
+    border: none;
+    color: var(--main-white);
+    background-color: var(--main-bgc);
+    transition: color .15s;
+}
+
+.view .btn:hover{
+    cursor: pointer;
+    color: var(--main-purple);
+}
+
+.view .btn:active{
+    box-shadow: inset 0 0 10px black;
+    opacity: .8;
+}

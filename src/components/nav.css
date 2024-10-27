@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import url(general.css);
+
+.nav .container{
+    background-color: var(--main-bgc);
+    padding-bottom: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+.link {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.header {
+    width: 100%;
+    background-color: var(--main-bgc);
+    display: flex;
+    flex-direction: column;
+}
+
+.header .mid-header {
+    display: flex;
+    padding: 20px 40px;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .welcome{
+    display: flex;
+    position: relative;
+}
+
+.dropdown{
+    position: absolute;
+    width: 140px;
+    left: -150px;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dropdown ul li p{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.dropdown .btn{
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.header .welcome > .btn{
+    width: 50px;
+    aspect-ratio: 1;
+    border: none;
+    font-size: 1.2rem;
+    background-color: var(--main-purple);
+    border-radius: 50% !important;
+    cursor: pointer;
+    color: var(--main-white);
+}
+.header .welcome > .btn:hover{
+    color: var(--main-bgc);
+}
+.header .mid-header .logo img {
+    cursor: pointer;
+    height: 70px;
+}
+
+.header .last-header .search-box{
+    position: relative;
+}
+
+.header .last-header .search-box input {
+    padding: 10px 10px;
+    outline: none;
+    background: none;
+    width: 250px;
+    /* tuka */
+    border: none;
+    background: var(--main-white);
+    border-radius: 12px;
+}
+@media (max-width: 800px) {
+    .search-box {
+      display: none;
+    }
+  }
+
+
+.header .last-header .search-box button {
+    position: absolute;
+    right: 0;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    width: 18%;
+    background: var(--main-bgc);
+    color: var(--main-white);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.header .mid-header {
+    display: flex;
+    margin-right: 30px;
+}
+
+.header .mid-header .icon {
+    margin-right: 10px;
+    fill: var(--main-white);
+}
+
+.btns-div {
+    display: flex;
+    gap: 1rem;
+}
+
+.header .mid-header .btn button {
+    padding: 0.6rem 1.1rem;
+    background-color: var(--main-purple);
+    border: none;
+    border-radius: 10px;
+    transition: color 0.2s;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--main-white);
+}
+
+.header .mid-header .btn button:hover {
+    cursor: pointer;
+    color: var(--main-bgc);
+}
+
+.last-header {
+    align-self: center;
+    align-self: center;
+    max-width: 99%;
+    border-radius: 12px;
+    width: 93%;
+    padding: 17px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+    align-items: center;
+    background: var(--main-purple);
+}
+
+.header .last-header ul {
+    padding-block: 10px;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+    width: 100px;
+    color: white;
+    display: flex;
+}
+
+.header .last-header ul li .link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--main-white);
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.header .last-header ul li .link:hover {
+    color: var(--main-bgc);
+}
+
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: end;
+}
+
+.cart-icon svg {
+    height: 25px;
+    fill: var(--main-white);
+    transition: fill 0.2s;
+    padding: 0 1.3rem;
+}
+
+svg:hover {
+    fill: var(--main-bgc);
+}
+
+.temp {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+}

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bgc: rgb(37, 24, 44);
+    --main-purple: rgb(190, 0, 190);
+    --main-white: rgb(255, 241, 254);
+}
+
+.contact {
+    padding: 20px 40px;
+    width: 100%;
+    background-color: var(--main-bgc);
+}
+
+.contact .container {
+    padding: 10px 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .container .form {
+    width: 450px;
+    border-radius: 12px;
+    background-color: var(--main-purple);
+    padding: 1.2rem 2rem;
+}
+
+.contact .container .form > p{
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+.contact .container .form .box {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin-top: 1.2rem;
+    align-items: center;
+}
+
+.contact .container .form .box .label h4 {
+    color: var(--main-bgc);
+    font-weight: 500;
+    font-size: .9em;
+}
+
+.contact .container .form .box .input input {
+    border: 0.5px solid black;
+    border-bottom: 1px solid black;
+    background-color: var(--main-white);
+    padding: 10px;
+    border-radius: 8px;
+    font-size:12px;
+    color: var(--main-bgc);
+    cursor:text;
+    width: 100%;
+}
+
+.contact .container .form .box .input input:focus{
+    border: none;
+    outline: none;
+    border: 0.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+
+.contact .container .form .box .input input::placeholder,
+.contact .container .form .box .input textarea::placeholder
+{
+    color: rgb(170, 170, 170);
+}
+
+.contact .container .form .box .input textarea {
+    outline: none;
+    border: 0.5px solid black;
+    background: var(--main-white);
+    border-bottom: 1px solid black;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contact .container .form .box .input textarea:focus{
+    border: none;
+    outline: none;
+    border: 0.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+
+.contact .container .form button {
+    padding: .75rem 1.5rem;
+    margin-top: 1.5rem;
+    background-color: var(--main-bgc);
+    color: var(--main-white);
+    border: none;
+    cursor: pointer;
+    transition: color .15s;
+}
+
+.contact .container .form button:hover{
+    color: var(--main-purple);
+}
