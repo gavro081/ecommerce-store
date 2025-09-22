@@ -1,7 +1,8 @@
-Proektna zadaca za predmetot Osnovi na Veb Dizajn.
+Project for Intro to Web Design course
 
-Za da ja otvorite stranicata lokalno na vasa masina prvo napravete git clone na repo-to i potoa izvrsete
+To run project locally
 ```
+git clone https://github.com/gavro081/ecommerce-store.git
 cd ecommerce-store
 npm install
 npm run dev
